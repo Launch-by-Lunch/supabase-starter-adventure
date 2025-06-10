@@ -15,12 +15,7 @@ const SupabaseGuide = () => {
         "Create a signup page with user registration",
         "Add logout functionality and user session management",
         "Implement protected routes that require authentication"
-      ],
-      codeExample: `// Example: Login component
-const handleLogin = async (email, password) => {
-  const { data, error } = await supabase.auth
-    .signInWithPassword({ email, password })
-}`
+      ]
     },
     {
       icon: Database,
@@ -32,11 +27,7 @@ const handleLogin = async (email, password) => {
         "Add a form to create and save new posts to the database",
         "Display all posts from the database in a list",
         "Add edit and delete functionality for posts"
-      ],
-      codeExample: `// Example: Saving data
-const { data, error } = await supabase
-  .from('posts')
-  .insert([{ title, content, user_id }])`
+      ]
     },
     {
       icon: Zap,
@@ -48,12 +39,7 @@ const { data, error } = await supabase
         "Add a contact form that sends emails using an edge function",
         "Implement AI text generation using an edge function",
         "Create a function to process payments with Stripe"
-      ],
-      codeExample: `// Example: Edge function call
-const { data } = await supabase.functions
-  .invoke('send-email', {
-    body: { to: email, subject, message }
-  })`
+      ]
     }
   ];
 
@@ -118,14 +104,6 @@ const { data } = await supabase.functions
                         </span>
                       </div>
                     ))}
-                  </div>
-                </div>
-
-                {/* Code Example */}
-                <div>
-                  <h4 className="font-medium mb-2 text-foreground">Example code:</h4>
-                  <div className="bg-muted/30 rounded-md p-3 font-mono text-xs text-muted-foreground overflow-x-auto">
-                    <pre>{feature.codeExample}</pre>
                   </div>
                 </div>
               </CardContent>
