@@ -15,7 +15,8 @@ const SupabaseGuide = () => {
         "Create a signup page with user registration",
         "Add logout functionality and user session management",
         "Implement protected routes that require authentication"
-      ]
+      ],
+      bottomText: "Move from simple person to allowing different users"
     },
     {
       icon: Database,
@@ -27,7 +28,8 @@ const SupabaseGuide = () => {
         "Add a form to create and save new posts to the database",
         "Display all posts from the database in a list",
         "Add edit and delete functionality for posts"
-      ]
+      ],
+      bottomText: "When you want data to be sharable and management"
     },
     {
       icon: Zap,
@@ -39,7 +41,8 @@ const SupabaseGuide = () => {
         "Add a contact form that sends emails using an edge function",
         "Implement AI text generation using an edge function",
         "Create a function to process payments with Stripe"
-      ]
+      ],
+      bottomText: "When you want to send email, talk to an API or work with your company systems"
     }
   ];
 
@@ -105,6 +108,13 @@ const SupabaseGuide = () => {
                       </div>
                     ))}
                   </div>
+                </div>
+
+                {/* Green Bottom Panel */}
+                <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
+                  <p className="text-green-700 dark:text-green-300 font-medium text-sm">
+                    {feature.bottomText}
+                  </p>
                 </div>
               </CardContent>
             </Card>
