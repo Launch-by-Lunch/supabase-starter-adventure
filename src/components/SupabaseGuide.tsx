@@ -132,48 +132,6 @@ const { data } = await supabase.functions
             </Card>
           ))}
         </div>
-
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
-            <p className="text-muted-foreground mb-6">
-              Connect your Supabase account to unlock these powerful features and start building your full-stack app today.
-            </p>
-            <Button size="lg" className="group">
-              Connect Supabase
-              <Database className="w-4 h-4 ml-2 group-hover:rotate-12 transition-transform" />
-            </Button>
-            <p className="text-xs text-muted-foreground mt-3">
-              Look for the green Supabase button in the top right corner
-            </p>
-          </div>
-        </div>
-
-        {/* Benefits */}
-        <div className="mt-16 grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <div className="text-center p-6">
-            <div className="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-              ⚡
-            </div>
-            <h4 className="font-medium mb-2">Instant Setup</h4>
-            <p className="text-sm text-muted-foreground">No complex configuration. Connect and start building immediately.</p>
-          </div>
-          <div className="text-center p-6">
-            <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-              🔒
-            </div>
-            <h4 className="font-medium mb-2">Production Ready</h4>
-            <p className="text-sm text-muted-foreground">Enterprise-grade security and scalability built-in.</p>
-          </div>
-          <div className="text-center p-6">
-            <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-              🚀
-            </div>
-            <h4 className="font-medium mb-2">AI-Powered</h4>
-            <p className="text-sm text-muted-foreground">Let Lovable's AI handle the implementation details for you.</p>
-          </div>
-        </div>
       </div>
     </div>
   );
