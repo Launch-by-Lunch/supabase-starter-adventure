@@ -1,5 +1,5 @@
 
-import { Database, LogIn, Function } from "lucide-react";
+import { Database, LogIn, Zap } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -39,7 +39,7 @@ const { data, error } = await supabase
   .insert([{ title, content, user_id }])`
     },
     {
-      icon: Function,
+      icon: Zap,
       title: "Edge Functions",
       subtitle: "Complex Server Operations", 
       description: "Use serverless functions for sending emails, AI processing, payments, and other backend operations.",
